@@ -242,3 +242,41 @@ Key: 2f72596312c1120bf869dd69b0c6b4aa6cc05981723a45a4bb294343a11793cc
 Output: 800880028100002402003000c4c4c4c4
 
 80088002 81000024 02003000 c4c4c4c4
+
+First message:
+
+mbedtls_md_hmac_starts:                    0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+b400007bb4cd8cc0  85 11 81 44 3b 6f 8b 54 fe c0 2b 9c 4d 11 fe 30  ...D;o.T..+.M..0
+b400007bb4cd8cd0  42 dd 07 f5 af 32 7e f2 7c 4b 8d 16 f8 bc 4f d7  B....2~.|K....O.
+mbedtls_md_hmac_update:                    0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+b400007aa4dd1171  02 02 00 00 6a f6 4e ae 00 78 f9 1b c7 a3 0a 37  ....j.N..x.....7
+b400007aa4dd1181  43 ee ba 3a e7 3c 90 d1 c7                       C..:.<...
+mbedtls_sha256_finish              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+77e5dab010  cf e3 56 54 7f 66 3b 46 6e e9 94 a7 e4 7e cf 6e  ..VT.f;Fn....~.n
+77e5dab020  53 0f b4 12 10 2e 90 e0 13 5c 06 2d 1f 22 7f e5  S........\.-."..
+mbedtls_sha256_finish                    0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+b400007bb4cd8d28  98 ed 78 98 eb b4 1e 5c 4b 19 ec ea 64 4e 04 40  ..x....\K...dN.@
+b400007bb4cd8d38  14 40 69 e5 c8 37 41 68 55 41 37 7f 78 14 46 29  .@i..7AhUA7.x.F)
+mbedtls_md_hmac_finish:                    0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+b400007bb4cd8d28  98 ed 78 98 eb b4 1e 5c 4b 19 ec ea 64 4e 04 40  ..x....\K...dN.@
+b400007bb4cd8d38  14 40 69 e5 c8 37 41 68 55 41 37 7f 78 14 46 29  .@i..7AhUA7.x.F)
+
+Second message:
+
+mbedtls_md_hmac_starts:                    0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+b400007bb4cd8cc0  85 11 81 44 3b 6f 8b 54 fe c0 2b 9c 4d 11 fe 30  ...D;o.T..+.M..0
+b400007bb4cd8cd0  42 dd 07 f5 af 32 7e f2 7c 4b 8d 16 f8 bc 4f d7  B....2~.|K....O.
+mbedtls_md_hmac_update:                    0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+b400007aa4dd1171  02 02 00 00 6b f6 4e ae 00 bf a5 08 7e fc b2 0c  ....k.N.....~...
+b400007aa4dd1181  3a b7 0d 04 ff d7 d9 7b 85                       :......{.
+mbedtls_sha256_finish              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+77e5dab170  0c 4d 0e 1a 1e d4 bb 4b 39 84 08 31 f2 61 2c 2d  .M.....K9..1.a,-
+77e5dab180  06 96 2a 6d e1 47 ac a8 47 9c 0d 33 fb 6f 14 dc  ..*m.G..G..3.o..
+mbedtls_sha256_finish                    0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+b400007bb4cd8d28  c1 95 6e c3 5a f9 70 11 83 16 73 87 8e 5e 14 80  ..n.Z.p...s..^..
+b400007bb4cd8d38  71 57 17 be 9c 54 cb b3 22 7e 32 8a d7 92 50 ba  qW...T.."~2...P.
+mbedtls_md_hmac_finish:                    0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+b400007bb4cd8d28  c1 95 6e c3 5a f9 70 11 83 16 73 87 8e 5e 14 80  ..n.Z.p...s..^..
+b400007bb4cd8d38  71 57 17 be 9c 54 cb b3 22 7e 32 8a d7 92 50 ba  qW...T.."~2...P.
+
+so the hmac base goes up by 1

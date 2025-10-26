@@ -1,0 +1,153 @@
+encryptionHmacKey: 1241849d0dcd2c1c7f9eed9cc2e60f92bec5b806f2b1e1b930c209e63a64e9f8
+decryptionHmacKey: eb2d9dfac17af942d9ba90eee9d9eae3f68a4926451e7c6a5e8680538a5da0c4
+
+40 c9d09902cc8a17ab 00 61d1919372e9f8fc36e7bc6936b0c5c5
+
+
+2025-10-26 03:24:59.723 12725-12747 System.out              net.zhuoweizhang.simstella           I  read bytes: 8060800181000005020000010a40b12a49a73f2c3b8f2ab5e1dc4909d1ee80c964e98de84cddab93d75c8ad1ea8e6861d64a6a788595107794475e03adc88ad91c97d723ff2c52226ba9a86b53b71210c63346ecc9b139ada722c7f1a277eba41800201f
+2025-10-26 03:24:59.741 12725-12747 System.out              net.zhuoweizhang.simstella           I  # com.oculus.atc.RequestEncryption@61df8f
+2025-10-26 03:24:59.742 12725-12747 System.out              net.zhuoweizhang.simstella           I  challenge: "\3063F\354\311\2619\255\247\"\307\361\242w\353\244"
+2025-10-26 03:24:59.742 12725-12747 System.out              net.zhuoweizhang.simstella           I  elliptic_curve: 0
+2025-10-26 03:24:59.742 12725-12747 System.out              net.zhuoweizhang.simstella           I  public_key: "\261*I\247?,;\217*\265\341\334I\t\321\356\200\311d\351\215\350L\335\253\223\327\\\212\321\352\216ha\326Jjx\205\225\020w\224G^\003\255\310\212\331\034\227\327#\377,R\"k\251\250kS\267"
+2025-10-26 03:24:59.742 12725-12747 System.out              net.zhuoweizhang.simstella           I  supported_parameters: 31
+2025-10-26 03:24:59.768 12725-12747 System.out              net.zhuoweizhang.simstella           I  read bytes: 80820001020000020a40b12a49a73f2c3b8f2ab5e1dc4909d1ee80c964e98de84cddab93d75c8ad1ea8e6861d64a6a788595107794475e03adc88ad91c97d723ff2c52226ba9a86b53b7122055dce0b9729b30c1dfef6312281230016265776b93189eb5c8c3571fbb7cd89e1a100e45e34b611d1d970dd86ff4956a86e820ec82b6c40a2807
+2025-10-26 03:24:59.769 12725-12747 System.out              net.zhuoweizhang.simstella           I  # com.oculus.atc.EnableEncryption@f8d12cf2
+2025-10-26 03:24:59.769 12725-12747 System.out              net.zhuoweizhang.simstella           I  base: -1467121300
+2025-10-26 03:24:59.769 12725-12747 System.out              net.zhuoweizhang.simstella           I  iv: "\016E\343Ka\035\035\227\r\330o\364\225j\206\350"
+2025-10-26 03:24:59.769 12725-12747 System.out              net.zhuoweizhang.simstella           I  parameters: 7
+2025-10-26 03:24:59.769 12725-12747 System.out              net.zhuoweizhang.simstella           I  public_key: "\261*I\247?,;\217*\265\341\334I\t\321\356\200\311d\351\215\350L\335\253\223\327\\\212\321\352\216ha\326Jjx\205\225\020w\224G^\003\255\310\212\331\034\227\327#\377,R\"k\251\250kS\267"
+2025-10-26 03:24:59.769 12725-12747 System.out              net.zhuoweizhang.simstella           I  seed: "U\334\340\271r\2330\301\337\357c\022(\0220\001bewk\223\030\236\265\310\303W\037\273|\330\236"
+2025-10-26 03:24:59.772 12725-12747 System.out              net.zhuoweizhang.simstella           I  dh: abd9e365a8b459a7b58573e7530bb2ccd10eac21fdb8a0a86b97057c57c513a4
+
+airshield::SHA256::Incremental::update:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f617700  ab d9 e3 65 a8 b4 59 a7 b5 85 73 e7 53 0b b2 cc  ...e..Y...s.S...
+777f617710  d1 0e ac 21 fd b8 a0 a8 6b 97 05 7c 57 c5 13 a4  ...!....k..|W...
+mbedtls_sha256_finish              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f6176e0  21 c2 9e 30 58 b9 c0 e8 4a 3e 11 a1 46 8c 9f e4  !..0X...J>..F...
+777f6176f0  53 88 7d c6 f6 a1 4b 3a dc d7 03 f1 76 d2 5a ee  S.}...K:....v.Z.
+
+this is sha256(sharedSecret)
+
+airshield::SHA256::Incremental::update:                    0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+b400007bb4ce8c68  55 dc e0 b9 72 9b 30 c1 df ef 63 12 28 12 30 01  U...r.0...c.(.0.
+b400007bb4ce8c78  62 65 77 6b 93 18 9e b5 c8 c3 57 1f bb 7c d8 9e  bewk......W..|..
+airshield::SHA256::Incremental::update:                    0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+b400007bb4ce8b58  30 31 32 33 34 35 36 37 38 39 61 62 63 64 65 66  0123456789abcdef
+airshield::SHA256::Incremental::update:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+78b17978dc  68 6d 61 63 5f 64 65 72 69 76 65                 hmac_derive
+airshield::SHA256::Incremental::update:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f6176e0  21 c2 9e 30 58 b9 c0 e8 4a 3e 11 a1 46 8c 9f e4  !..0X...J>..F...
+777f6176f0  53 88 7d c6 f6 a1 4b 3a dc d7 03 f1 76 d2 5a ee  S.}...K:....v.Z.
+mbedtls_sha256_finish              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f6176c0  8c 42 d4 01 d0 a5 03 81 8a 7d db f1 54 6d e9 49  .B.......}..Tm.I
+777f6176d0  7d dc 42 d9 b2 a3 f9 59 73 7c 69 f7 9f 7a 60 1c  }.B....Ys|i..z`.
+
+after "hmac_derive", add sha256(sharedSecret)
+
+mbedtls_md_hmac_starts:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f6175c0  8c 42 d4 01 d0 a5 03 81 8a 7d db f1 54 6d e9 49  .B.......}..Tm.I
+777f6175d0  7d dc 42 d9 b2 a3 f9 59 73 7c 69 f7 9f 7a 60 1c  }.B....Ys|i..z`.
+mbedtls_md_hmac_update:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f6176e0  21 c2 9e 30 58 b9 c0 e8 4a 3e 11 a1 46 8c 9f e4  !..0X...J>..F...
+777f6176f0  53 88 7d c6 f6 a1 4b 3a dc d7 03 f1 76 d2 5a ee  S.}...K:....v.Z.
+mbedtls_sha256_finish              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f617540  4a c6 ac 9b 72 57 dc 34 55 ea 3f d6 66 00 7b 46  J...rW.4U.?.f.{F
+777f617550  93 c4 0f fa cc d2 7b b4 87 ee 68 48 81 ef 3b 35  ......{...hH..;5
+mbedtls_sha256_finish              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f617670  5a 33 02 d5 31 f1 47 71 d5 ab ec 6b 01 dd a7 6f  Z3..1.Gq...k...o
+777f617680  76 ae 60 34 71 40 20 95 e3 7c e4 6a 53 70 0c 0f  v.`4q@ ..|.jSp..
+mbedtls_md_hmac_finish:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f617670  5a 33 02 d5 31 f1 47 71 d5 ab ec 6b 01 dd a7 6f  Z3..1.Gq...k...o
+777f617680  76 ae 60 34 71 40 20 95 e3 7c e4 6a 53 70 0c 0f  v.`4q@ ..|.jSp..
+
+instead of sharedSecret, this uses sha256(sharedSecret)
+
+mbedtls_md_hmac_starts:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f617628  5a 33 02 d5 31 f1 47 71 d5 ab ec 6b 01 dd a7 6f  Z3..1.Gq...k...o
+777f617638  76 ae 60 34 71 40 20 95 e3 7c e4 6a 53 70 0c 0f  v.`4q@ ..|.jSp..
+mbedtls_md_hmac_update:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+78b179a3b2  41 69 72 53 68 69 65 6c 64                       AirShield
+mbedtls_md_hmac_update:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f61764c  01                                               .
+mbedtls_sha256_finish              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f617590  25 b0 9b 44 ea 23 00 4c 05 90 f5 21 ee 60 d5 fd  %..D.#.L...!.`..
+777f6175a0  6d 39 27 63 4c d2 cc 9c f7 19 13 94 07 9f a2 dd  m9'cL...........
+mbedtls_sha256_finish              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f617650  e2 20 0a 70 13 ea 4d 4d 49 2b 21 81 b6 be f5 45  . .p..MMI+!....E
+777f617660  81 15 8c 78 f7 56 af ba 18 78 cc 79 e0 aa 44 8d  ...x.V...x.y..D.
+mbedtls_md_hmac_finish:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f617650  e2 20 0a 70 13 ea 4d 4d 49 2b 21 81 b6 be f5 45  . .p..MMI+!....E
+777f617660  81 15 8c 78 f7 56 af ba 18 78 cc 79 e0 aa 44 8d  ...x.V...x.y..D.
+
+0xa88d816c
+
+mbedtls_md_hmac_starts:                    0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+b400007bb4ce8cb0  e2 20 0a 70 13 ea 4d 4d 49 2b 21 81 b6 be f5 45  . .p..MMI+!....E
+b400007bb4ce8cc0  81 15 8c 78 f7 56 af ba 18 78 cc 79 e0 aa 44 8d  ...x.V...x.y..D.
+mbedtls_md_hmac_update:                    0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+b400007aa4dc8b05  6c 81 8d a8 00 61 d1 91 93 72 e9 f8 fc 36 e7 bc  l....a...r...6..
+b400007aa4dc8b15  69 36 b0 c5 c5                                   i6...
+mbedtls_sha256_finish              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f617010  18 89 3d a8 c8 bd 40 19 1d 54 b0 e3 c4 d6 2d 3e  ..=...@..T....->
+777f617020  f3 55 ce 7b 33 35 9f b1 e3 d8 4b e3 a3 50 64 ed  .U.{35....K..Pd.
+mbedtls_sha256_finish                    0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+b400007bb4ce8d18  c9 d0 99 02 cc 8a 17 ab 31 fd 5e f4 1e cb 5b 4b  ........1.^...[K
+b400007bb4ce8d28  2d b7 fb 31 b4 e4 5c 9b d3 b9 fa ac c0 00 af a0  -..1..\.........
+mbedtls_md_hmac_finish:                    0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+b400007bb4ce8d18  c9 d0 99 02 cc 8a 17 ab 31 fd 5e f4 1e cb 5b 4b  ........1.^...[K
+b400007bb4ce8d28  2d b7 fb 31 b4 e4 5c 9b d3 b9 fa ac c0 00 af a0  -..1..\.........
+
+For encryption key:
+
+airshield::SHA256::Incremental::update:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f6177a0  21 c2 9e 30 58 b9 c0 e8 4a 3e 11 a1 46 8c 9f e4  !..0X...J>..F...
+777f6177b0  53 88 7d c6 f6 a1 4b 3a dc d7 03 f1 76 d2 5a ee  S.}...K:....v.Z.
+airshield::SHA256::Incremental::update:                    0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+b400007bb4ce8828  c6 33 46 ec c9 b1 39 ad a7 22 c7 f1 a2 77 eb a4  .3F...9.."...w..
+airshield::SHA256::Incremental::update:                    0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+b400007bb4ce8938  41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41  AAAAAAAAAAAAAAAA
+b400007bb4ce8948  41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41  AAAAAAAAAAAAAAAA
+mbedtls_sha256_finish              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f617780  b5 b9 2a 3b ef 55 a9 c8 78 5c 31 ad 73 16 ff c3  ..*;.U..x\1.s...
+777f617790  0b cd 5d 03 2b d2 b9 26 0a ca 5a 6c dc b6 76 b6  ..].+..&..Zl..v.
+
+computes hkdfSalt - extra sha256(secret) at the start
+
+mbedtls_md_hmac_starts:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f617680  b5 b9 2a 3b ef 55 a9 c8 78 5c 31 ad 73 16 ff c3  ..*;.U..x\1.s...
+777f617690  0b cd 5d 03 2b d2 b9 26 0a ca 5a 6c dc b6 76 b6  ..].+..&..Zl..v.
+mbedtls_md_hmac_update:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f6177a0  21 c2 9e 30 58 b9 c0 e8 4a 3e 11 a1 46 8c 9f e4  !..0X...J>..F...
+777f6177b0  53 88 7d c6 f6 a1 4b 3a dc d7 03 f1 76 d2 5a ee  S.}...K:....v.Z.
+mbedtls_sha256_finish              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f617600  1d 35 fb 46 f9 1f 62 4c 44 b1 5d 07 6a 88 3b 24  .5.F..bLD.].j.;$
+777f617610  45 f3 d8 ce 92 15 bd 1e bb 29 99 f6 89 da 61 bb  E........)....a.
+mbedtls_sha256_finish              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f617730  66 fc f2 bd 13 2f ba 30 41 6a 35 c4 de d7 3e 4d  f..../.0Aj5...>M
+777f617740  29 49 86 81 85 77 5e 67 17 0a 2c 22 d4 66 53 61  )I...w^g..,".fSa
+mbedtls_md_hmac_finish:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f617730  66 fc f2 bd 13 2f ba 30 41 6a 35 c4 de d7 3e 4d  f..../.0Aj5...>M
+777f617740  29 49 86 81 85 77 5e 67 17 0a 2c 22 d4 66 53 61  )I...w^g..,".fSa
+mbedtls_md_hmac_starts:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f6176e8  66 fc f2 bd 13 2f ba 30 41 6a 35 c4 de d7 3e 4d  f..../.0Aj5...>M
+777f6176f8  29 49 86 81 85 77 5e 67 17 0a 2c 22 d4 66 53 61  )I...w^g..,".fSa
+mbedtls_md_hmac_update:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+78b179a3b2  41 69 72 53 68 69 65 6c 64                       AirShield
+mbedtls_md_hmac_update:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f61770c  01                                               .
+mbedtls_sha256_finish              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f617650  b7 a9 91 90 b9 79 87 5e e8 cb 4c 90 de 69 e6 64  .....y.^..L..i.d
+777f617660  ad 5c 50 fe ab 15 2a 01 25 b6 2a bf 19 68 72 63  .\P...*.%.*..hrc
+mbedtls_sha256_finish              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f617710  6f 2c e0 24 08 7b 90 e2 e6 b2 5c 90 58 6d ad 7c  o,.$.{....\.Xm.|
+777f617720  87 90 ff 4e cd ae 13 82 c2 60 f5 22 91 7b 9e 2b  ...N.....`.".{.+
+mbedtls_md_hmac_finish:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f617710  6f 2c e0 24 08 7b 90 e2 e6 b2 5c 90 58 6d ad 7c  o,.$.{....\.Xm.|
+777f617720  87 90 ff 4e cd ae 13 82 c2 60 f5 22 91 7b 9e 2b  ...N.....`.".{.+
+
+
+mbedtls_cipher_set_iv:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f617854  42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42  BBBBBBBBBBBBBBBB
+mbedtls_cipher_setkey:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+777f617830  6f 2c e0 24 08 7b 90 e2 e6 b2 5c 90 58 6d ad 7c  o,.$.{....\.Xm.|
+777f617840  87 90 ff 4e cd ae 13 82 c2 60 f5 22 91 7b 9e 2b  ...N.....`.".{.+ 256

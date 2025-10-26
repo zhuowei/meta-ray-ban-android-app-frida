@@ -75,6 +75,9 @@ mbedtls_md_hmac_finish:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E
 
 hmac1 = hmac(secret = firstSeeded, sharedSecret)
 
+This is HKDF: hmac1 = HKDF-Extract(firstSeeded, sharedSecret)
+https://datatracker.ietf.org/doc/html/rfc5869
+
 mbedtls_md_hmac_starts:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
 7a0b4af6e8  18 66 15 c7 db 29 a8 5a 15 d5 1d e1 81 bc af 5e  .f...).Z.......^
 7a0b4af6f8  f0 a2 cf dd 19 07 d4 40 83 8e fd 6a 86 74 f2 a3  .......@...j.t..
@@ -93,6 +96,8 @@ mbedtls_md_hmac_finish:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E
 7a0b4af720  68 0a f0 06 45 92 a2 c6 63 a0 89 1d 7a 43 87 5d  h...E...c...zC.]
 
 hmac2 = hmac(secret = hmac1, "AirShield", 0x01) 
+
+This is HKDF: hmac2 = HKDF-Expand(hmac1, "AirShield", 0x20)
 
 mbedtls_cipher_set_iv:              0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
 7a0b4af854  42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42  BBBBBBBBBBBBBBBB
